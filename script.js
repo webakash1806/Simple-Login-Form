@@ -3,6 +3,10 @@ function res() {
     document.getElementById("passwordVal").value = ""
     document.getElementById("result").innerHTML = "Enter valid E-Mail and Password"
     document.getElementById("result").style.color = "#fff"
+    document.getElementById("sign-1").style.backgroundColor = "red"
+    document.getElementById("emailVal").style.borderColor = "red"
+    document.getElementById("sign").style.backgroundColor = "red"
+    document.getElementById("passwordVal").style.borderColor = "red"
 }
 
 function result() {
@@ -30,8 +34,8 @@ function emailvalid() {
 
     }
     else {
-        sign1.style.backgroundColor = "#red"
-        emailVal.style.borderColor = "#red"
+        sign1.style.backgroundColor = "red"
+        emailVal.style.borderColor = "red"
     }
 }
 
