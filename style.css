@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #1b1b1b;
 }
 
 a {
@@ -22,22 +23,65 @@ h1 {
 }
 
 .main {
+    position: relative;
     background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+
 }
 
+.main::before {
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 120%;
+    background: linear-gradient(to right, #ff00d4, #00dbde);
+    animation: rotate 8s linear infinite;
+}
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    25% {
+        transform: rotate(-120deg);
+    }
+
+    50% {
+        transform: rotate(60deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    background: #000000;
+    inset: 3px;
+    border-radius: 10px;
+}
+
+.main-left {
+    z-index: 30;
+}
 
 .main-left img {
     height: 455px;
-    /* border: 2px #407BFF dotted; */
+    z-index: 20;
     border-right: none;
-    box-shadow: -15px -15px 20px #407cffae;
 }
 
 
@@ -52,7 +96,8 @@ h1 {
     flex-direction: column;
     gap: 23px;
     align-items: center;
-    box-shadow: 15px 15px 20px #407cffae;
+    z-index: 20;
+    /* box-shadow: 15px 15px 20px #407cffae; */
 
 }
 
