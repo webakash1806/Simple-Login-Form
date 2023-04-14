@@ -40,7 +40,7 @@ h1 {
     height: 170px;
     width: 120%;
     background: linear-gradient(to right, #ff00d4, #00dbde);
-    animation: rotate 6s linear infinite;
+    animation: rotate 8s linear infinite;
 }
 
 @keyframes rotate {
@@ -115,6 +115,7 @@ p {
 
 input {
     padding: 10px 8px;
+    padding-right: 20px;
     font-size: 17px;
     width: 18rem;
     border-radius: 5px;
