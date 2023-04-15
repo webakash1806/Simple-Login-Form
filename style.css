@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -20,12 +21,15 @@ a {
 h1 {
     color: #EBEBEB;
     margin-top: -23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
 }
 
 .main {
     position: relative;
     background-color: #000000;
-    padding: 20px;
+    padding: 0px 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -79,7 +83,7 @@ h1 {
 }
 
 .main-left img {
-    height: 455px;
+    height: 440px;
     z-index: 20;
     border-right: none;
 }
@@ -87,10 +91,10 @@ h1 {
 
 .main-right {
 
-    padding: 40px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 20px;
     align-items: center;
     z-index: 20;
 
@@ -103,9 +107,9 @@ p {
 .main-right i {
     color: #a9c1f6;
     border: 2px solid #407BFF;
-    padding: 20px 25px;
+    padding: 15px 20px;
+    font-size: 30px;
     border-radius: 50%;
-    font-size: 50px;
     margin-bottom: 15px;
 }
 
@@ -114,10 +118,10 @@ p {
 }
 
 input {
-    padding: 10px 8px;
+    padding: 6px 8px;
     padding-right: 20px;
-    font-size: 17px;
-    width: 18rem;
+    font-size: 15px;
+    width: 17rem;
     border-radius: 5px;
     outline: none;
     border: red 1px solid;
@@ -131,8 +135,8 @@ label {
     position: absolute;
     left: 2px;
     padding: 5px;
-    top: 6px;
-    font-size: 18px;
+    top: 1px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ffffff;
@@ -145,18 +149,18 @@ input:focus~label,
 input:not(:placeholder-shown)~label {
     top: -14px;
     left: 3px;
-    font-size: 14px;
+    font-size: 13px;
     background-color: #000;
     border-radius: 5px;
-    padding: 2px 5px;
+    padding: 0px 5px;
 }
 
 #sign {
     position: absolute;
-    right: 8px;
-    top: 18px;
-    width: 7px;
-    height: 7px;
+    right: 7px;
+    top: 15px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background-color: #ff0000;
     box-shadow: 5px 5px 20px red;
@@ -164,10 +168,10 @@ input:not(:placeholder-shown)~label {
 
 #sign-1 {
     position: absolute;
-    right: 8px;
-    top: 18px;
-    width: 7px;
-    height: 7px;
+    right: 7px;
+    top: 15px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background-color: #ff0000;
     box-shadow: 5px 5px 20px #ffffff;
@@ -180,7 +184,7 @@ input:not(:placeholder-shown)~label {
 
 .btn button {
     background-color: #fff;
-    padding: 5px 20px;
+    padding: 2px 20px;
     border-radius: 3px;
     border: none;
     letter-spacing: 1px;

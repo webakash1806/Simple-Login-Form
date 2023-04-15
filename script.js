@@ -15,13 +15,22 @@ function result() {
 
     if (emailVal.value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) || pas.value.match(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/)) {
         document.getElementById("result").innerHTML = "LOGIN SUCCESSFULL"
+        alert("LOGIN SUCCESSFULL")
         document.getElementById("result").style.color = "#00ff00"
     }
     else {
         document.getElementById("result").innerHTML = "LOGIN UNSUCCESSFULL"
+        alert("LOGIN UNSUCCESSFULL")
         document.getElementById("result").style.color = "red"
 
     }
+
+    document.getElementById("emailVal").value = ""
+    document.getElementById("passwordVal").value = ""
+    document.getElementById("sign-1").style.backgroundColor = "red"
+    document.getElementById("emailVal").style.borderColor = "red"
+    document.getElementById("sign").style.backgroundColor = "red"
+    document.getElementById("passwordVal").style.borderColor = "red"
 }
 
 
