@@ -242,7 +242,7 @@ input:not(:placeholder-shown)~label {
     }
 
     .main-right {
-        padding: 40px 20px;
+        padding: 40px 15px;
     }
 
     input {
@@ -250,7 +250,7 @@ input:not(:placeholder-shown)~label {
     }
 
     .main::before {
-        width: 160%;
+        width: 170%;
     }
 
     .main-right i {
